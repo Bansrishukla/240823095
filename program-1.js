@@ -8,6 +8,6 @@ function checkEvenOdd(number) {
 }
 
 // Test the function
-let number = 7;
+let number = 5;
 let result = checkEvenOdd(number);
 console.log(`The number ${number} is ${result}.`);
