@@ -11,4 +11,4 @@ for (let i = 1; i <= num; i++) {
 
 // Output the result
 console.log(factorial);
-cbvxs
+
