@@ -1,20 +1,11 @@
+// Program to find the maximum of two numbers
 
-// 2. Find the Maximum of Two Numbers
-// Definition: Given two numbers, print the larger one.
+// Input values
+let a = 5;
+let b = 9;
 
-// Function to find the maximum of two numbers
-function findMax(num1, num2) {
-    if (num1 > num2) {
-        console.log(num1);
-    } else {
-        console.log(num2);
-    }
-}
+// Find maximum
+let max = (a > b) ? a : b;
 
-// Example input
-let num1 = 5;
-let num2 = 9;
-
-// Calling the function
-findMax(num1, num2);
-dgshgfyhsfg
+// Output the result
+console.log(max);
