@@ -9,5 +9,4 @@ let max = (a > b) ? a : b;
 
 // Output the result
 console.log(max);
-fduhsdgj
-sfsdafa
+
