@@ -1,15 +1,16 @@
 // 1. Check Even or Odd
-function checkEvenOdd(number) {
-    if (number % 2 === 0) {
-        return "Even";
-    } else {
-        return "Odd";
-    }
-}
+// function checkEvenOdd(number) {
+//     if (number % 2 === 0) {
+//         return "Even";
+//     } else {
+//         return "Odd";
+//     }
+// }
 
-// Test the function
-let number = 5;
-let result = checkEvenOdd(number);
-console.log(`The number ${number} is ${result}.`);
-abcdse
-wrrwr
+// // Test the function
+// let number = 5;
+// let result = checkEvenOdd(number);
+// console.log(`The number ${number} is ${result}.`);
+
+
+
