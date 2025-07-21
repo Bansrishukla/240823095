@@ -1,0 +1,329 @@
+Assignment-1
+
+// 1. Check Even or Odd
+// function checkEvenOdd(number) {
+//     if (number % 2 === 0) {
+//         return "Even";
+//     } else {
+//         return "Odd";
+//     }
+// }
+
+// // Test the function
+// let number = 5;
+// let result = checkEvenOdd(number);
+// console.log(`The number ${number} is ${result}.`);
+
+
+
+// Pro-2
+//Program to find the maximum of two numbers
+
+// Input values
+let a = 5;
+let b = 9;
+
+// Find maximum
+let max = (a > b) ? a : b;
+
+// Output the result
+console.log(max);
+
+// Program-3 
+// Program to check if a year is a leap year
+
+// Input year
+let year = 2020;
+
+// Check leap year condition
+if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
+    console.log("Leap Year");
+} else {
+    console.log("Not a Leap Year");
+}
+
+//program-4
+// Program to calculate factorial of a number
+
+// Input number
+let num = 4;
+let factorial = 1;
+
+// Calculate factorial using a loop
+for (let i = 1; i <= num; i++) {
+    factorial *= i;
+}
+
+// Output the result
+console.log(factorial);
+
+// program-5
+// Program to print multiplication table of a number
+
+// Input number
+let num = 3;
+
+// Print multiplication table
+for (let i = 1; i <= 10; i++) {
+    console.log(`${num} x ${i} = ${num * i}`);
+}
+
+//program-6
+// Program to reverse a number
+
+// Input number
+let num = 1234;
+
+// Convert number to string, reverse it, and convert back to number
+let reversed = Number(num.toString().split('').reverse().join(''));
+
+// Output the reversed number
+console.log(reversed);
+
+//program-7
+// Program to check if a number is a palindrome
+
+// Input number
+let num = 121;
+
+// Reverse the number (convert to string, reverse, and convert back)
+let reversed = Number(num.toString().split('').reverse().join(''));
+
+// Check if original and reversed are same
+if (num === reversed) {
+    console.log("Palindrome");
+} else {
+    console.log("Not a Palindrome");
+}
+
+
+//Program-8
+// Program to check if a number is a Palindrome
+
+// Input number
+let num = 121;
+
+// Reverse the number by converting to string
+let reversed = Number(num.toString().split('').reverse().join(''));
+
+// Check if the number is the same when reversed
+if (num === reversed) {
+    console.log("Palindrome");
+} else {
+    console.log("Not a Palindrome");
+}
+
+
+//program-9
+// Program to check if a number is Prime
+
+// Input number
+let num = 11;
+let isPrime = true;
+
+// Numbers less than 2 are not prime
+if (num < 2) {
+    isPrime = false;
+} else {
+    // Check divisors from 2 to sqrt(num)
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i === 0) {
+            isPrime = false;
+            break;
+        }
+    }
+}
+
+// Output result
+if (isPrime) {
+    console.log("Prime");
+} else {
+    console.log("Not Prime");
+}
+
+
+//progrma-10
+// Program to count digits in a number
+
+// Input number
+let num = 5023;
+
+// Convert to string and count length
+let count = num.toString().length;
+
+console.log(count);
+
+
+//program-11
+// Program to calculate sum of digits of a number
+
+// Input number
+let num = 123;
+let sum = 0;
+
+// Calculate sum of digits
+while (num > 0) {
+    sum += num % 10;    // Get
+
+
+//progrma-12
+// Program to check if a number is an Armstrong Number
+
+// Input number
+let num = 153;
+let originalNum = num;
+
+// Count digits
+let digits = num.toString().length;
+
+// Calculate sum of each digit raised to the power of digits
+let sum = 0;
+while (num > 0) {
+    let digit = num % 10;
+    sum += Math.pow(digit, digits);
+    num = Math.floor(num / 10);
+}
+
+// Check Armstrong condition
+if (sum === originalNum) {
+    console.log("Armstrong");
+} else {
+    console.log("Not Armstrong");
+}
+
+//program-13
+// Program to generate first n Fibonacci numbers
+
+// Input value
+let n = 5;
+
+// First two Fibonacci numbers
+let a = 0, b = 1;
+
+process.stdout.write(a + " ");  // Prin
+
+
+//program-14
+// Program to check if a character is a vowel or consonant
+
+// Input character
+let ch = 'a';
+
+// Convert to lowercase to handle uppercase inputs
+ch = ch.toLowerCase();
+
+// Check for vowel
+if (ch === 'a' || ch === 'e' || ch === 'i' || ch === 'o' || ch === 'u') {
+    console.log("Vowel");
+} else {
+    console.log("Consonant");
+}
+
+
+//program-15
+// Simple Calculator Program
+
+// Input values
+let a = 4;
+let b = 2;
+let operator = '+';  // Change to '+', '-', '*', '/'
+
+let result;
+
+// Perform calculation based on operator
+if (operator === '+') {
+    result = a + b;
+} else if (operator === '-') {
+    result = a - b;
+} else if (operator === '*') {
+    result = a * b;
+} else if (operator === '/') {
+    result = a / b;
+} else {
+    console.log("Invalid operator");
+}
+
+console.log(result);
+
+//program-16
+// Program to find GCD (HCF) of two numbers
+
+// Input values
+let a = 20;
+let b = 28;
+
+// Euclidean Algorithm
+while (b !== 0) {
+    let temp = b;
+    b = a % b;
+    a = temp;
+}
+
+// Output the GCD
+console.log(a);
+
+
+//program-17
+// Program to check if a number is a Perfect Number
+
+// Input number
+let num = 28;
+let sum = 0;
+
+// Find divisors (excluding the number itself) and sum them
+for (let i = 1; i < num; i++) {
+    if (num % i === 0) {
+        sum += i;
+    }
+}
+
+// Check if sum equals the number
+if (sum === num) {
+    console.log("Perfect");
+} else {
+    console.log("Not Perfect");
+}
+
+
+/program-18
+// Program to print all positive divisors of a number
+
+// Input number
+let num = 10;
+
+// Print divisors
+for (let i = 1; i <= num; i++) {
+    if (num % i === 0) {
+        process.stdout.write(i + " ");  // print on same line
+    }
+}
+
+
+/program-19
+// Program to check if a number is positive, negative, or zero
+
+// Input number
+let num = -5;
+
+// Check the number
+if (num > 0) {
+    console.log("Positive");
+} else if (num < 0) {
+    console.log("Negative");
+} else {
+    console.log("Zero");
+}
+
+
+//program-20
+// Program to find power (a^b)
+
+// Input values
+let a = 2;
+let b = 3;
+
+// Calculate power using Math.pow
+let result = Math.pow(a, b);
+
+// Output the result
+console.log(result);
